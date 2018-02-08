@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+#import "ViewerProtocol.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <WKNavigationDelegate, ViewerProtocol>
 
+@property (weak, nonatomic) IBOutlet UIView *container;
 
 @end
-

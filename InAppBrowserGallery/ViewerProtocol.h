@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewerProtocol.h
 //  InAppBrowserGallery
 //
 //  Created by Shintaro Tanaka on 2017/10/11.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@protocol ViewerProtocol
+@required
+- (void)load;
+- (void)load:(NSString *)location;
+@optional
+- (void)viewWillAppear:(BOOL)animated;
 @end
-

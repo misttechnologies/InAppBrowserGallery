@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ThirdViewController.h
 //  InAppBrowserGallery
 //
 //  Created by Shintaro Tanaka on 2017/10/11.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewerProtocol.h"
+@import SafariServices;
 
-@interface FirstViewController : UIViewController <UIWebViewDelegate, ViewerProtocol>
+@interface ThirdViewController : UIViewController <SFSafariViewControllerDelegate, ViewerProtocol>
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
